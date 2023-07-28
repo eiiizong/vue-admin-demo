@@ -8,6 +8,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
+import windiCSS from 'vite-plugin-windicss'
+
 import { wrapperEnv } from './build/utils'
 
 import type { UserConfigExport, ConfigEnv } from "vite";
@@ -36,6 +38,7 @@ export default ({ command, mode }: ConfigEnv):UserConfigExport => {
     plugins: [
       vue(),
       vueJsx(),
+      windiCSS(),
       AutoImport({
         resolvers: [ElementPlusResolver()],
       }),
