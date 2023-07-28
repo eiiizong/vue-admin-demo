@@ -19,3 +19,7 @@ tests/**/coverage/
 *.njsproj
 *.sln
 tsconfig.tsbuildinfo
+
+# 自动生成的文件
+auto-imports.d.ts
+components.d.ts

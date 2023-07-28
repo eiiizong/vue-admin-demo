@@ -1,5 +1,8 @@
 <template>
-  <div class="home">2323</div>
+  <div class="home">2323
+
+    <el-button type="primary">test</el-button>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
