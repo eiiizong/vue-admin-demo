@@ -5,9 +5,6 @@
 <script setup lang="ts">
 import {  RouterView } from 'vue-router'
 
-const _a = ''
-
-
 </script>
 
 <style scoped>
