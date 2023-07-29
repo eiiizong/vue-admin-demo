@@ -13,6 +13,8 @@
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "types": ["node"]
+    "types": ["node"],
+    // 当模块没有默认导出时，允许“import x from y”。
+    "allowSyntheticDefaultImports": true
   }
 }

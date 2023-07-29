@@ -1,51 +1,31 @@
 import { fileURLToPath, URL } from 'node:url'
 
 import { loadEnv } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-
-import windiCSS from 'vite-plugin-windicss'
 
 import { wrapperEnv } from './build/utils'
+import { createVitePlugins } from './build/vite/plugins'
 
-import type { UserConfigExport, ConfigEnv } from "vite";
+import type { UserConfigExport, ConfigEnv } from 'vite'
 
 const __APP_INFO__ = {
   pkg: {},
-  lastBuildTime:''
+  lastBuildTime: ''
 }
 
 // https://vitejs.dev/config/
-export default ({ command, mode }: ConfigEnv):UserConfigExport => {
+export default ({ command, mode }: ConfigEnv): UserConfigExport => {
+  const root = process.cwd()
 
-  const root = process.cwd();
-
-  const env = loadEnv(mode, root);
+  const env = loadEnv(mode, root)
 
   // 将字符串转化布尔类型
   const viteEnv = wrapperEnv(env)
 
-  const isBuild = command === 'build';
-
-  console.log(viteEnv,isBuild)
-
+  // 是否为生产环境
+  const isBuild = command === 'build'
 
   return {
-    plugins: [
-      vue(),
-      vueJsx(),
-      windiCSS(),
-      AutoImport({
-        resolvers: [ElementPlusResolver()],
-      }),
-      Components({
-        resolvers: [ElementPlusResolver()],
-      }),
-    ],
+    plugins: createVitePlugins(viteEnv, isBuild),
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
