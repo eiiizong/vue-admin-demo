@@ -7,7 +7,8 @@
     "nightwatch.conf.*",
     "playwright.config.*",
     "build/**/*",
-    "types/**/*"
+    "types/**/*",
+    "package.json"
   ],
   "compilerOptions": {
     "composite": true,
