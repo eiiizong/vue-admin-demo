@@ -3,15 +3,14 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import WindiCSS from 'vite-plugin-windicss'
+import windiCSS from 'vite-plugin-windicss'
+import eslint from 'vite-plugin-eslint'
 
 import { configHtmlPlugin } from './html'
 
 import type { PluginOption } from 'vite'
 
 const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
-  console.log('viteEnv0', viteEnv)
-
   const vitePlugins: (PluginOption | PluginOption[])[] = [
     // have to
     vue(),
@@ -34,7 +33,10 @@ const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
   )
 
   // vite-plugin-windicss
-  vitePlugins.push(WindiCSS())
+  vitePlugins.push(windiCSS())
+
+  // vite-plugin-eslint
+  vitePlugins.push(eslint())
 
   // vite-plugin-html
   vitePlugins.push(configHtmlPlugin(viteEnv, isBuild))
