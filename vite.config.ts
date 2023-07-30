@@ -2,7 +2,6 @@ import { fileURLToPath, URL } from 'node:url'
 import dayjs from 'dayjs'
 import pkg from './package.json'
 import { loadEnv } from 'vite'
-import { resolve } from 'path'
 
 import { wrapperEnv } from './build/utils'
 import { createVitePlugins } from './build/vite/plugins'
