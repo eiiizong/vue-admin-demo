@@ -24,6 +24,6 @@ module.exports = {
       }
     ],
     // 关闭要求组件名称始终为多词
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 0
   }
 }

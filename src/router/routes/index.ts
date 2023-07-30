@@ -3,7 +3,7 @@ import type { AppRouteRecordRaw } from '@/router/types'
 const LoginRoute: AppRouteRecordRaw = {
   path: '/login',
   name: 'Login',
-  component: () => import('@/views/sys/login/login.vue'),
+  component: () => import('@/views/sys/login/index.vue'),
   meta: {
     title: '登录'
   }
