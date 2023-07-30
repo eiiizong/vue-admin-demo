@@ -1,12 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
 import dayjs from 'dayjs'
 import pkg from './package.json'
-
 import { loadEnv } from 'vite'
+import { resolve } from 'path'
 
 import { wrapperEnv } from './build/utils'
 import { createVitePlugins } from './build/vite/plugins'
 import { createProxy } from './build/vite/proxy'
+import { OUTPUT_DIR } from './build/constant'
 
 import type { UserConfigExport, ConfigEnv } from 'vite'
 
@@ -15,6 +16,11 @@ const { dependencies, devDependencies, name, version } = pkg
 const __APP_INFO__ = {
   pkg: { dependencies, devDependencies, name, version },
   lastBuildTime: dayjs().format('YYYY-MM-DD HH:mm:ss')
+}
+
+/** 路径查找 */
+const pathResolve = (dir: string): string => {
+  return fileURLToPath(new URL(dir, import.meta.url))
 }
 
 // https://vitejs.dev/config/
@@ -35,7 +41,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     plugins: createVitePlugins(viteEnv, isBuild),
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
+        '@': pathResolve('./src')
       }
     },
     server: {
@@ -43,6 +49,28 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       host: true,
       port: VITE_PORT,
       proxy: createProxy(VITE_PROXY)
+    },
+    build: {
+      // 指定输出路径
+      outDir: OUTPUT_DIR,
+      // 启用/禁用 gzip 压缩大小报告。压缩大型输出文件可能会很慢，因此禁用该功能可能会提高大型项目的构建性能。
+      reportCompressedSize: false,
+      // 规定触发警告的 chunk 大小。（以 kbs 为单位）
+      chunkSizeWarningLimit: 4000,
+      // 构建后是否生成 source map 文件
+      sourcemap: false,
+      // 自定义底层的 Rollup 打包配置。
+      rollupOptions: {
+        input: {
+          index: pathResolve('index.html')
+        },
+        // 静态资源分类打包
+        output: {
+          chunkFileNames: 'static/js/[name]-[hash].js',
+          entryFileNames: 'static/js/[name]-[hash].js',
+          assetFileNames: 'static/[ext]/[name]-[hash].[ext]'
+        }
+      }
     },
     esbuild: {
       pure: VITE_DROP_CONSOLE ? ['console.log', 'debugger'] : []
