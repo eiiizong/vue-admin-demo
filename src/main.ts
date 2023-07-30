@@ -1,4 +1,7 @@
+import 'normalize.css/normalize.css'
+import '@/assets/styles/css/reset.css'
 import 'virtual:windi.css'
+import '@/assets/styles/css/tailwind.css'
 
 import { createApp } from 'vue'
 import { setupStore } from '@/stores'

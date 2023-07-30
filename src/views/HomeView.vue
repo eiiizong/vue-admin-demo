@@ -1,5 +1,5 @@
 <template>
-  <div class="home flex flex-col">
+  <div class="home flex-c">
     2323
 
     <el-button type="primary">test</el-button>

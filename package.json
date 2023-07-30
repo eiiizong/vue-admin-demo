@@ -16,6 +16,7 @@
     "dayjs": "^1.11.9",
     "echarts": "^5.4.3",
     "element-plus": "^2.3.8",
+    "normalize.css": "^8.0.1",
     "pinia": "^2.1.4",
     "qrcode": "^1.5.3",
     "qs": "^6.11.2",
