@@ -3,10 +3,10 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import windiCSS from 'vite-plugin-windicss'
-import eslint from 'vite-plugin-eslint'
 
+import { configEslintPlugin } from './eslint'
 import { configHtmlPlugin } from './html'
+import { configWindiCSSPluginPlugin } from './windicss'
 
 import type { PluginOption } from 'vite'
 
@@ -32,14 +32,14 @@ const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
     })
   )
 
-  // vite-plugin-windicss
-  vitePlugins.push(windiCSS())
-
   // vite-plugin-eslint
-  vitePlugins.push(eslint())
+  vitePlugins.push(configEslintPlugin())
 
   // vite-plugin-html
   vitePlugins.push(configHtmlPlugin(viteEnv, isBuild))
+
+  // vite-plugin-windicss
+  vitePlugins.push(configWindiCSSPluginPlugin())
 
   // The following plugins only work in the production environment
   if (isBuild) {
