@@ -1,5 +1,6 @@
 <template>
-  <div class="home">2323
+  <div class="home flex flex-col">
+    2323
 
     <el-button type="primary">test</el-button>
   </div>

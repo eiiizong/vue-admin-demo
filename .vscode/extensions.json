@@ -4,6 +4,8 @@
     "Vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "johnstoncode.svn-scm"
+    "johnstoncode.svn-scm",
+    "bradlc.vscode-tailwindcss",
+    "Lokalise.i18n-ally"
   ]
 }
