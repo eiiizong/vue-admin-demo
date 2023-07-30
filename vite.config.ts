@@ -31,12 +31,13 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
   // 将字符串转化布尔类型
   const viteEnv = wrapperEnv(env)
 
-  const { VITE_PORT, VITE_DROP_CONSOLE, VITE_PROXY } = viteEnv
+  const { VITE_PORT, VITE_DROP_CONSOLE, VITE_PROXY, VITE_PUBLIC_PATH } = viteEnv
 
   // 是否为生产环境
   const isBuild = command === 'build'
 
   return {
+    base: VITE_PUBLIC_PATH,
     plugins: createVitePlugins(viteEnv, isBuild),
     resolve: {
       alias: {
