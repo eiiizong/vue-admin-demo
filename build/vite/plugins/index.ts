@@ -21,6 +21,7 @@ const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
   // unplugin-auto-import/vite
   vitePlugins.push(
     AutoImport({
+      imports: ['vue'],
       resolvers: [ElementPlusResolver()]
     })
   )
