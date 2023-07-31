@@ -1,16 +1,6 @@
-import type { AppRouteRecordRaw } from '@/router/types'
+import demoRoute from './demo'
+import loginRoute from './login'
 
-const LoginRoute: AppRouteRecordRaw = {
-  path: '/login',
-  name: 'Login',
-  component: () => import('@/views/sys/login/index.vue'),
-  meta: {
-    title: '登录'
-  }
-}
+const routes = [demoRoute, loginRoute]
 
-// Basic routing without permission
-// 未经许可的基本路由
-const basicRoutes = [LoginRoute]
-
-export { basicRoutes }
+export default routes
