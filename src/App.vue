@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider :locale="locale">
+  <el-config-provider v-bind="elConfigProviderAttr">
     <router-view />
   </el-config-provider>
 </template>
@@ -8,5 +8,5 @@
 import { ElConfigProvider } from 'element-plus'
 import { useElConfigProviderAttr } from '@/hooks'
 
-const { locale } = useElConfigProviderAttr()
+const elConfigProviderAttr = useElConfigProviderAttr()
 </script>

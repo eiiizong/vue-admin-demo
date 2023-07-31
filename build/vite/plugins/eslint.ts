@@ -16,7 +16,9 @@ import eslint from 'vite-plugin-eslint'
 import type { PluginOption } from 'vite'
 
 const configEslintPlugin = (): PluginOption => {
-  const eslintPlugin = eslint()
+  const eslintPlugin = eslint({
+    include: ['src/**/*.ts', 'src/**/*.vue', 'build/**/*']
+  })
 
   return eslintPlugin
 }
