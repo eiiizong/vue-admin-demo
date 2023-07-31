@@ -1,0 +1,1 @@
+export { useElConfigProviderAttr } from './useElConfigProviderAttr'

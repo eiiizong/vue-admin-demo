@@ -1,4 +1,6 @@
 <template>
-  <div class="div">login</div>
+  <div class="div">
+    <el-date-picker type="datetime" placeholder="Select date and time" />
+  </div>
 </template>
 <script></script>
