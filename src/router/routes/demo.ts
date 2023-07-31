@@ -8,6 +8,14 @@ const demoRoute: AppRouteRecordRaw = {
   },
   children: [
     {
+      path: 'switch-language',
+      name: 'Switchlanguage',
+      component: () => import('@/views/demo/switch-language/index.vue'),
+      meta: {
+        title: '切换语言'
+      }
+    },
+    {
       path: 'switch-theme',
       name: 'SwitchTheme',
       component: () => import('@/views/demo/switch-theme/index.vue'),
