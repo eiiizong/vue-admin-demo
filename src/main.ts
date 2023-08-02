@@ -2,6 +2,8 @@ import 'normalize.css/normalize.css'
 import '@/assets/styles/css/reset.css'
 import 'virtual:windi.css'
 import '@/assets/styles/css/tailwind.css'
+import 'element-plus/theme-chalk/dark/css-vars.css'
+import '@/assets/styles/css/dark.css'
 
 import { createApp } from 'vue'
 
