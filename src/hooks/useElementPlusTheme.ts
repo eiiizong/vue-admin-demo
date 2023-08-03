@@ -50,8 +50,6 @@ const setThemeColor = (color: string, isDark = false, namespace = 'el') => {
           colorMix(color, mixColor, i / 10)
         )
       }
-
-      el.style.setProperty(`--${namespace}-color-primary-dark-2`, colorMix(color, mixColor, 0.2))
     } else {
       // 清除已有设置
       el.style.removeProperty(`--${namespace}-color-primary`)
@@ -59,7 +57,6 @@ const setThemeColor = (color: string, isDark = false, namespace = 'el') => {
         el.style.removeProperty(`--${namespace}-color-primary-light-${i}`)
         el.style.removeProperty(`--${namespace}-color-primary-dark-${i}`)
       }
-      el.style.removeProperty(`--${namespace}-color-primary-dark-2`)
     }
   } else {
     // eslint-disable-next-line no-console
@@ -71,13 +68,13 @@ const useElementPlusTheme = () => {
   const stroeUserSettings = useStroeUserSettings()
   const { userSettings } = toRefs(stroeUserSettings)
   const { theme } = userSettings.value
-
+  const { color, isDark } = theme
   onMounted(() => {
-    setThemeColor(theme.color, theme.isDark)
+    setThemeColor(color, isDark)
   })
-  
+
   const changeTheme = () => {
-    //
+    setThemeColor(color, isDark)
   }
 
   return {
