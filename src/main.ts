@@ -15,7 +15,6 @@ import App from './App.vue'
 async function bootstrap() {
   const app = createApp(App)
 
-  // 配置 store
   setupStore(app)
 
   setupRouter(app)

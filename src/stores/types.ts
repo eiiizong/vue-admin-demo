@@ -18,6 +18,10 @@ export interface StroeUserSettings {
      * 是否水平折叠收起菜单（仅在 mode 为 vertical 时可用）
      */
     isCollapse: boolean
+    /**
+     * 菜单背景色
+     */
+    // bgColor: string
   }
   /**
    * 主题配置
