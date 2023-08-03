@@ -1,10 +1,10 @@
 <template>
-  <div clang="layout-menu">
+  <div class="layout-menu">
     <el-menu
-      default-active="2"
-      class="el-menu-vertical-demo"
+      class="custom-el-menu"
       :mode="stroeUserSettings.menu.mode"
       :collapse="stroeUserSettings.menu.isCollapse"
+      ellipsis
       @open="onOpen"
       @close="onClose"
     >
@@ -60,9 +60,20 @@ const onClose = (key: string, keyPath: string[]) => {
 
 <style scoped lang="scss">
 .layout-menu {
-  .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 200px;
-    min-height: 400px;
+  width: 100%;
+  :deep(.custom-el-menu) {
+    background-color: transparent;
+    color: #fff;
+    .el-menu-item,
+    .el-sub-menu__title {
+      color: #fff;
+    }
+    .el-menu {
+      background-color: transparent;
+    }
+    &:not(.el-menu--collapse) {
+      width: 100%;
+    }
   }
 }
 </style>

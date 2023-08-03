@@ -1,7 +1,6 @@
 <template>
-  <div class="layout-logo flex-c">
-    <img src="/" alt="" srcset="" />
-    <div class="title">管理平台</div>
+  <div class="layout-logo flex-c h-[64px]">
+    <img class="h-[38px] cursor-pointer" src="../../../assets/images/logo.png" alt="" srcset="" />
   </div>
 </template>
 
@@ -9,6 +8,6 @@
 
 <style lang="scss" scoped>
 .layout-logo {
-  background-color: #f00;
+  background-color: transparent;
 }
 </style>
