@@ -5,7 +5,8 @@ import type { StroeUserSettings } from '@/stores/types'
 /**
  * 用户设置信息 store
  */
-const useStroeUserSettings = defineStore('stroeUserSettings', {
+const useStroeUserSettings = defineStore({
+  id: 'stroeUserSettings',
   state: (): StroeUserSettings => {
     return {
       menu: {
