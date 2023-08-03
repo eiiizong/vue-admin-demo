@@ -1,17 +1,12 @@
 <template>
   <div clang="layout-menu">
-    <el-radio-group v-model="isCollapse" style="margin-bottom: 20px">
-      <el-radio-button :label="false">expand</el-radio-button>
-      <el-radio-button :label="true">collapse</el-radio-button>
-    </el-radio-group>
-
     <el-menu
       default-active="2"
       class="el-menu-vertical-demo"
-      mode="horizontal"
-      :collapse="isCollapse"
-      @open="handleOpen"
-      @close="handleClose"
+      :mode="stroeUserSettings.menu.mode"
+      :collapse="stroeUserSettings.menu.isCollapse"
+      @open="onOpen"
+      @close="onClose"
     >
       <el-sub-menu index="1">
         <template #title>
@@ -48,15 +43,17 @@
 </template>
 
 <script lang="ts" setup>
+import { useStroeUserSettings } from '@/stores/modules'
+
 import { Document, Menu as IconMenu, Location, Setting } from '@element-plus/icons-vue'
 
-const isCollapse = ref(true)
+const stroeUserSettings = useStroeUserSettings()
 
-const handleOpen = (key: string, keyPath: string[]) => {
+const onOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
 
-const handleClose = (key: string, keyPath: string[]) => {
+const onClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
 </script>
