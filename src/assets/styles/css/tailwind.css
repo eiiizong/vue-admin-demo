@@ -15,6 +15,10 @@
     @apply flex justify-between items-center;
   }
 
+  .full {
+    @apply w-full h-full;
+  }
+
   .navbar-bg-hover {
     @apply dark:text-white dark:hover:!bg-[#242424];
   }

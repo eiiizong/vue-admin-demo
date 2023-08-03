@@ -16,5 +16,9 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "i18n-ally.localesPaths": ["src/languages", "src/languages/locales"]
+  "i18n-ally.localesPaths": ["src/languages", "src/languages/locales"],
+  // 禁用 css/less/scss内置校验
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
