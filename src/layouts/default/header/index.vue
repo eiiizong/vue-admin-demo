@@ -6,6 +6,6 @@
 
 <style lang="scss" scoped>
 .layout-header {
-  background-color: #f0f;
+  //
 }
 </style>

@@ -30,14 +30,6 @@
         <el-icon><icon-menu /></el-icon>
         <template #title>Navigator Two</template>
       </el-menu-item>
-      <el-menu-item index="3" disabled>
-        <el-icon><document /></el-icon>
-        <template #title>Navigator Three</template>
-      </el-menu-item>
-      <el-menu-item index="4">
-        <el-icon><setting /></el-icon>
-        <template #title>Navigator Four</template>
-      </el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -45,7 +37,7 @@
 <script lang="ts" setup>
 import { useStroeUserSettings } from '@/stores/modules'
 
-import { Document, Menu as IconMenu, Location, Setting } from '@element-plus/icons-vue'
+import { Menu as IconMenu, Location } from '@element-plus/icons-vue'
 
 const stroeUserSettings = useStroeUserSettings()
 

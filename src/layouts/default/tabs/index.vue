@@ -6,6 +6,6 @@
 
 <style lang="scss" scoped>
 .layout-tabs {
-  background-color: #f00f;
+  // background-color: #f00f;
 }
 </style>
