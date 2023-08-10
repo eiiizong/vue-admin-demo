@@ -9,6 +9,8 @@ import { createApp } from 'vue'
 
 import { setupStore } from '@/stores'
 import { setupRouter } from '@/router'
+import { registerGlobComp } from '@/components'
+import { setupGlobDirectives } from '@/directives'
 
 import App from './App.vue'
 
@@ -20,6 +22,10 @@ async function bootstrap() {
   setupStore(app)
 
   setupRouter(app)
+
+  registerGlobComp(app)
+
+  setupGlobDirectives(app)
 
   await setupAppConfig()
 
