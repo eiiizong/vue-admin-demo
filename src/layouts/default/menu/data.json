@@ -1,0 +1,423 @@
+{
+  "code": 200,
+  "requestId": "57a39924-2f7b-40ab-a6a2-a4c456e29443",
+  "data": {
+    "commonMenuList": [
+      {
+        "orderNo": 240,
+        "isCommonMenu": true,
+        "prefix": null,
+        "name": "一体机App管理",
+        "iconColor": null,
+        "icon": null,
+        "pid": "d335acddcd8a406486920bbceba13272",
+        "id": "9d54a41d005a4a9cb8b378c6bb26fc9f",
+        "url": "ytjAppMg.html#/ytjAppMg"
+      },
+      {
+        "orderNo": 30,
+        "isCommonMenu": true,
+        "prefix": null,
+        "name": "行政区划管理",
+        "iconColor": null,
+        "icon": "gold",
+        "pid": "48afedddc8f04c668b3c1572c30a7745",
+        "id": "4b2eee0d7ded4e8094d4acf439fd3a1c",
+        "url": "orguser.html#/areaManagement"
+      }
+    ],
+    "menus": {
+      "orderNo": 0,
+      "isCommonMenu": false,
+      "prefix": null,
+      "name": "银海软件",
+      "iconColor": null,
+      "icon": null,
+      "pid": "0",
+      "id": "40337bdecb19484ebeb39d6c21aaca26",
+      "url": null,
+      "children": [
+        {
+          "orderNo": 51,
+          "isCommonMenu": false,
+          "children": [
+            {
+              "orderNo": 10,
+              "isCommonMenu": false,
+              "children": [
+                {
+                  "orderNo": 0,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "组织机构管理",
+                  "iconColor": null,
+                  "icon": "cluster",
+                  "pid": "48afedddc8f04c668b3c1572c30a7745",
+                  "id": "1e706f26bc144c1da12022359c238053",
+                  "url": "orguser.html#/orgManagement"
+                },
+                {
+                  "orderNo": 10,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "人员管理",
+                  "iconColor": null,
+                  "icon": "user",
+                  "pid": "48afedddc8f04c668b3c1572c30a7745",
+                  "id": "daceeff8a97b46cb9573b93ba3a5a792",
+                  "url": "orguser.html#/userManagement"
+                },
+                {
+                  "orderNo": 20,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "自定义组织管理",
+                  "iconColor": null,
+                  "icon": "deployment-unit",
+                  "pid": "48afedddc8f04c668b3c1572c30a7745",
+                  "id": "3dbde33722154503a7d22ac60f6a0e4e",
+                  "url": "orguser.html#/customOrgManagement"
+                },
+                {
+                  "orderNo": 30,
+                  "isCommonMenu": true,
+                  "prefix": null,
+                  "name": "行政区划管理",
+                  "iconColor": null,
+                  "icon": "gold",
+                  "pid": "48afedddc8f04c668b3c1572c30a7745",
+                  "id": "4b2eee0d7ded4e8094d4acf439fd3a1c",
+                  "url": "orguser.html#/areaManagement"
+                }
+              ],
+              "prefix": null,
+              "name": "组织人员管理",
+              "iconColor": null,
+              "icon": "usergroup-add",
+              "pid": "0415d44401b24605a21b589b6aaa349e",
+              "id": "48afedddc8f04c668b3c1572c30a7745",
+              "url": null
+            },
+            {
+              "orderNo": 30,
+              "isCommonMenu": false,
+              "children": [
+                {
+                  "orderNo": 0,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "角色权限管理",
+                  "iconColor": null,
+                  "icon": "idcard",
+                  "pid": "78ad02fdb879406ebc5e7a4faf8f5905",
+                  "id": "95bb9b749bf54e4692b0b1f14fd1b5ab",
+                  "url": "authority.html#/roleAuthorityManagement"
+                },
+                {
+                  "orderNo": 10,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "管理员权限管理",
+                  "iconColor": null,
+                  "icon": "safety",
+                  "pid": "78ad02fdb879406ebc5e7a4faf8f5905",
+                  "id": "8aa86ed4c7f84183935a262db4a605d3",
+                  "url": "authority.html#/adminAuthority"
+                },
+                {
+                  "orderNo": 20,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "权限代理",
+                  "iconColor": null,
+                  "icon": "team",
+                  "pid": "78ad02fdb879406ebc5e7a4faf8f5905",
+                  "id": "877e407281dd48acb05a77fcb922bc73",
+                  "url": "authority.html#/authorityAgent"
+                },
+                {
+                  "orderNo": 30,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "相似权限管理",
+                  "iconColor": null,
+                  "icon": "block",
+                  "pid": "78ad02fdb879406ebc5e7a4faf8f5905",
+                  "id": "5e67c7acef914c349d8aff076921f6b5",
+                  "url": "authority.html#/similarAuthority"
+                }
+              ],
+              "prefix": null,
+              "name": "资源权限管理",
+              "iconColor": null,
+              "icon": "safety-certificate",
+              "pid": "0415d44401b24605a21b589b6aaa349e",
+              "id": "78ad02fdb879406ebc5e7a4faf8f5905",
+              "url": null
+            },
+            {
+              "orderNo": 40,
+              "isCommonMenu": false,
+              "children": [
+                {
+                  "orderNo": 0,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "功能资源管理",
+                  "iconColor": null,
+                  "icon": "compass",
+                  "pid": "7459c1b525934151a1d309a304933644",
+                  "id": "ec56a0a43b09429482632cb61f7c6908",
+                  "url": "sysmg.html#/resourceManagement"
+                },
+                {
+                  "orderNo": 20,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "自定义资源管理",
+                  "iconColor": null,
+                  "icon": "copyright",
+                  "pid": "7459c1b525934151a1d309a304933644",
+                  "id": "c2745b7cae7846acb9bcf8d0f4e836e8",
+                  "url": "sysmg.html#/customResource"
+                },
+                {
+                  "orderNo": 30,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "标签管理",
+                  "iconColor": null,
+                  "icon": "tags",
+                  "pid": "7459c1b525934151a1d309a304933644",
+                  "id": "3df588fc565d4287b3cefcd00a39cd91",
+                  "url": "sysmg.html#/tagManagement"
+                },
+                {
+                  "orderNo": 40,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "用户可管理字段配置",
+                  "iconColor": null,
+                  "icon": "user",
+                  "pid": "7459c1b525934151a1d309a304933644",
+                  "id": "bd9d0bba145c458e841aa9da0aeeb1d8",
+                  "url": "sysmg.html#/userInfoManagement"
+                },
+                {
+                  "orderNo": 50,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "URL资源管理",
+                  "iconColor": null,
+                  "icon": "global",
+                  "pid": "7459c1b525934151a1d309a304933644",
+                  "id": "5611d1533d494a839c0be1e7a05da31f",
+                  "url": "resourcemg.html#/urlmg"
+                },
+                {
+                  "orderNo": 60,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "润乾模板管理",
+                  "iconColor": null,
+                  "icon": "form",
+                  "pid": "7459c1b525934151a1d309a304933644",
+                  "id": "722e1cc774a14178a488eb42ef4099de",
+                  "url": "functionModules.html#/runqian"
+                }
+              ],
+              "prefix": null,
+              "name": "资源管理",
+              "iconColor": null,
+              "icon": "align-left",
+              "pid": "0415d44401b24605a21b589b6aaa349e",
+              "id": "7459c1b525934151a1d309a304933644",
+              "url": null
+            },
+            {
+              "orderNo": 41,
+              "isCommonMenu": false,
+              "children": [
+                {
+                  "orderNo": 0,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "日志动态配置",
+                  "iconColor": null,
+                  "icon": "file-sync",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "7c1dabd160974d8f90858c187cefa128",
+                  "url": "logmg.html#/logConfig"
+                },
+                {
+                  "orderNo": 30,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "字典管理",
+                  "iconColor": null,
+                  "icon": "book",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "ffa74f43e853441dac0ee90c787cb2e6",
+                  "url": "sysmg.html#/dictionaryManager"
+                },
+                {
+                  "orderNo": 50,
+                  "isCommonMenu": false,
+                  "children": [
+                    {
+                      "orderNo": 0,
+                      "isCommonMenu": false,
+                      "prefix": null,
+                      "name": "作业管理",
+                      "iconColor": null,
+                      "icon": "form",
+                      "pid": "fb8637c2e52e4b05bd2c07d742141ee7",
+                      "id": "72888507aba5484a8942e8dd0e6b6f7f",
+                      "url": "sysmg.html#/jobManager"
+                    },
+                    {
+                      "orderNo": 10,
+                      "isCommonMenu": false,
+                      "prefix": null,
+                      "name": "作业历史",
+                      "iconColor": null,
+                      "icon": "clock-circle",
+                      "pid": "fb8637c2e52e4b05bd2c07d742141ee7",
+                      "id": "c578d9f8626d48f2971d7a18ac5281c5",
+                      "url": "sysmg.html#/jobHistory"
+                    }
+                  ],
+                  "prefix": null,
+                  "name": "分布式任务管理",
+                  "iconColor": null,
+                  "icon": "gold",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "fb8637c2e52e4b05bd2c07d742141ee7",
+                  "url": null
+                },
+                {
+                  "orderNo": 70,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "接入系统管理",
+                  "iconColor": null,
+                  "icon": "api",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "59a7fb9c459a4dd48d468f2add1d32b2",
+                  "url": "sysmg.html#/accessSystem"
+                },
+                {
+                  "orderNo": 80,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "功能配置管理",
+                  "iconColor": null,
+                  "icon": "compass",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "bf447212de284c79a0d73c658d0692b4",
+                  "url": "sysmg.html#/configManagement"
+                },
+                {
+                  "orderNo": 90,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "系统配置管理",
+                  "iconColor": null,
+                  "icon": "tool",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "cd49aa1e1a724404a4dfb4f290e1ed62",
+                  "url": "sysmg.html#/systemConfigManagement"
+                },
+                {
+                  "orderNo": 100,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "动态服务",
+                  "iconColor": null,
+                  "icon": "database",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "a3c94b4edf1e4e9d8665a81dc1c5f778",
+                  "url": "sysmg.html#/dynamicRest"
+                },
+                {
+                  "orderNo": 110,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "系统异常日志",
+                  "iconColor": null,
+                  "icon": "exception",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "43f468b40c6c4c76a3a2fe4be903f4c7",
+                  "url": "audit.html#/systemExceptionLog"
+                },
+                {
+                  "orderNo": 120,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "操作日志",
+                  "iconColor": null,
+                  "icon": "form",
+                  "pid": "1d4e283ad5584e02811f6b188d3592bc",
+                  "id": "fe8be18859b5478d8b76a7653f02e5eb",
+                  "url": "audit.html#/operationLog"
+                }
+              ],
+              "prefix": null,
+              "name": "系统管理",
+              "iconColor": null,
+              "icon": "setting",
+              "pid": "0415d44401b24605a21b589b6aaa349e",
+              "id": "1d4e283ad5584e02811f6b188d3592bc",
+              "url": null
+            },
+            {
+              "orderNo": 51,
+              "isCommonMenu": false,
+              "children": [
+                {
+                  "orderNo": 10,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "工作台组件管理",
+                  "iconColor": null,
+                  "icon": "block",
+                  "pid": "7b7f9cd1675a4b54b05c7c7cf0a7ac63",
+                  "id": "60554e93387146bb9c7357907ba093fa",
+                  "url": "workTablePage.html#/componentsMg"
+                },
+                {
+                  "orderNo": 20,
+                  "isCommonMenu": false,
+                  "prefix": null,
+                  "name": "工作台角色模板管理",
+                  "iconColor": null,
+                  "icon": "layout",
+                  "pid": "7b7f9cd1675a4b54b05c7c7cf0a7ac63",
+                  "id": "0aac95c1e73947bea41be639cc4e9036",
+                  "url": "workTablePage.html#/roleTemplateMg"
+                }
+              ],
+              "prefix": null,
+              "name": "工作台模块",
+              "iconColor": null,
+              "icon": "laptop",
+              "pid": "0415d44401b24605a21b589b6aaa349e",
+              "id": "7b7f9cd1675a4b54b05c7c7cf0a7ac63",
+              "url": null
+            }
+          ],
+          "prefix": null,
+          "name": "管理系统",
+          "iconColor": null,
+          "icon": "setting",
+          "pid": "40337bdecb19484ebeb39d6c21aaca26",
+          "id": "0415d44401b24605a21b589b6aaa349e",
+          "url": null
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "serviceSuccess": true,
+  "redirectUrl": null
+}
