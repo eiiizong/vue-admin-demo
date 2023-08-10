@@ -89,6 +89,10 @@ const isString = (val: unknown): val is string => {
   return is(val, 'String')
 }
 
+/**
+ * 判断 val 是否是一个函数
+ * @param val 值
+ */
 const isFunction = (val: unknown): val is Function => {
   return typeof val === 'function'
 }
