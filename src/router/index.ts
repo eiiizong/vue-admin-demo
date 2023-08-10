@@ -19,10 +19,10 @@ const router = createRouter({
 })
 
 /**
- * 配置路由器
+ * 配置路由
  */
 const setupRouter = (app: App<Element>) => {
   app.use(router)
 }
 
-export { setupRouter }
+export { setupRouter, router }
