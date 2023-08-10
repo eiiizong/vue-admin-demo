@@ -1,8 +1,8 @@
-import basicRoute from './basic'
-import demoRoute from './demo'
-import loginRoute from './login'
-import workbench from './workbench'
+import { demoRoute } from './demo'
+import { sysRoute } from './sys'
+import { basicRoute } from './basic'
 
-const routes = [basicRoute, demoRoute, loginRoute, workbench]
+const routes = [...sysRoute, ...basicRoute, demoRoute]
+console.log(routes, 99)
 
 export default routes

@@ -18,7 +18,7 @@ import { setupErrorHandle } from '@/logics/error-handle'
 
 import App from './App.vue'
 
-async function bootstrap() {
+const bootstrap = async () => {
   const app = createApp(App)
 
   // 配置 store
