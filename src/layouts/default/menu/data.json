@@ -40,6 +40,13 @@
         {
           "orderNo": 51,
           "isCommonMenu": false,
+          "prefix": null,
+          "name": "管理系统",
+          "iconColor": null,
+          "icon": "setting",
+          "pid": "40337bdecb19484ebeb39d6c21aaca26",
+          "id": "0415d44401b24605a21b589b6aaa349e",
+          "url": null,
           "children": [
             {
               "orderNo": 10,
@@ -405,14 +412,7 @@
               "id": "7b7f9cd1675a4b54b05c7c7cf0a7ac63",
               "url": null
             }
-          ],
-          "prefix": null,
-          "name": "管理系统",
-          "iconColor": null,
-          "icon": "setting",
-          "pid": "40337bdecb19484ebeb39d6c21aaca26",
-          "id": "0415d44401b24605a21b589b6aaa349e",
-          "url": null
+          ]
         }
       ]
     }
