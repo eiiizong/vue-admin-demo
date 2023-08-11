@@ -24,7 +24,17 @@ const useStroeUserSettings = defineStore({
       showBreadcrumb: true
     }
   },
-  getters: {},
+  getters: {
+    getMenu(): StroeUserSettings['menu'] {
+      return this.menu
+    },
+    getTheme(): StroeUserSettings['theme'] {
+      return this.theme
+    },
+    getLanguage(): StroeUserSettings['language'] {
+      return this.language
+    }
+  },
   actions: {},
   persist: true
 })

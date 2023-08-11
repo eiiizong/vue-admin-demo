@@ -15,6 +15,10 @@ export interface StroeUserSettings {
      */
     width: string
     /**
+     * 主题
+     */
+    theme?: 'default'
+    /**
      * 是否水平折叠收起菜单（仅在 mode 为 vertical 时可用）
      */
     isCollapse: boolean
@@ -39,7 +43,7 @@ export interface StroeUserSettings {
   /**
    * 语言
    */
-  language: 'zh-cn'
+  language: 'zh-cn' | 'en'
   /**
    * 是否显示logo
    */
