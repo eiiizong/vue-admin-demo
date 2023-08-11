@@ -9,4 +9,4 @@ const switchLanguageRoute: AppRouteRecordRaw = {
   }
 }
 
-export { switchLanguageRoute }
+export default switchLanguageRoute

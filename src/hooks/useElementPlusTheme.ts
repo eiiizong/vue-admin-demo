@@ -66,9 +66,7 @@ const setThemeColor = (color: string, isDark = false, namespace = 'el') => {
 
 const useElementPlusTheme = () => {
   const stroeUserSettings = useStroeUserSettings()
-  const { userSettings } = toRefs(stroeUserSettings)
-  const { theme } = userSettings.value
-  const { color, isDark } = theme
+  const { color, isDark } = stroeUserSettings.getTheme
   onMounted(() => {
     setThemeColor(color, isDark)
   })

@@ -9,4 +9,4 @@ const switchThemeRoute: AppRouteRecordRaw = {
   }
 }
 
-export { switchThemeRoute }
+export default switchThemeRoute

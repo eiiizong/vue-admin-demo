@@ -1,5 +1,5 @@
 <template>
-  <div class="login">404</div>
+  <div class="menu">menu</div>
 </template>
 
 <script lang="ts" setup></script>

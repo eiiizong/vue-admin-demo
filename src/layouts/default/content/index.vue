@@ -1,5 +1,9 @@
 <template>
-  <div class="layout-content full">layout-content</div>
+  <div class="layout-content full">
+    layout-content
+
+    <RouterView></RouterView>
+  </div>
 </template>
 
 <script lang="ts" setup></script>
