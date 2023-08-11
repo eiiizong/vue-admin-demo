@@ -1,7 +1,7 @@
 import type { AppRouteRecordRaw } from '@/router/types'
 
-const ExceptionRoute: AppRouteRecordRaw = {
-  path: '/error',
+const loginRoute: AppRouteRecordRaw = {
+  path: '/login',
   name: 'Login',
   component: () => import('@/views/sys/login/index.vue'),
   meta: {
@@ -9,4 +9,4 @@ const ExceptionRoute: AppRouteRecordRaw = {
   }
 }
 
-export default ExceptionRoute
+export { loginRoute }

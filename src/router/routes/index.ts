@@ -1,14 +1,13 @@
 import type { AppRouteRecordRaw } from '@/router/types'
+
+import { LAYOUT } from '@/router/constant'
+
 import { demoRoute } from './demo'
 import { sysRoute } from './sys'
 // import { basicRoute } from './basic'
 
-/** 原始静态路由（未做任何处理） */
-const routes: AppRouteRecordRaw[] = [demoRoute, ...sysRoute]
-
-// const layoutRoute = {
-
-// }
+const routes: AppRouteRecordRaw[] = []
+const mainRoutes: AppRouteRecordRaw[] = [demoRoute, sysRoute]
 
 /**
  * 自动导入全部静态路由，无需再手动引入！匹配 src/router/routes/project 目录（任何嵌套级别）中具有 .ts 扩展名的所有文件
@@ -25,6 +24,17 @@ Object.keys(projectRoutes).forEach((key) => {
     routes.push(route)
   }
 })
+
+const layoutDefaultRoute: AppRouteRecordRaw = {
+  path: '/',
+  name: 'Home',
+  component: LAYOUT,
+  redirect: '/workbench',
+  meta: {},
+  children: mainRoutes
+}
+
+routes.push(layoutDefaultRoute)
 
 console.log(routes, 99878)
 

@@ -1,8 +1,9 @@
 import type { AppRouteRecordRaw } from '@/router/types'
 
-import { menuManagmentRoute } from './menu-management'
+import { loginRoute } from './login'
+import { workbenchRoute } from './workbench'
 
-const children = [menuManagmentRoute]
+const childrenRoutes = [loginRoute, workbenchRoute]
 
 const sysRoute: AppRouteRecordRaw = {
   path: '/sys',
@@ -10,7 +11,7 @@ const sysRoute: AppRouteRecordRaw = {
   meta: {
     title: '示例'
   },
-  children
+  children: childrenRoutes
 }
 
 export { sysRoute }
