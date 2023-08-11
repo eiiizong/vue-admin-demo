@@ -1,7 +1,7 @@
 import type { AppRouteRecordRaw } from '@/router/types'
 
 const testRoute: AppRouteRecordRaw = {
-  path: '/test',
+  path: 'test',
   name: 'ProjectTest',
   component: () => import('@/views/project/test/index.vue'),
   meta: {
