@@ -1,7 +1,7 @@
 <template>
   <el-container :class="[prefixCls]">
     <LayoutAside></LayoutAside>
-    <el-container :clss="`${prefixCls}-main`">
+    <el-container :class="`${prefixCls}-content`">
       <LayoutHeader></LayoutHeader>
       <LayoutTabs></LayoutTabs>
       <LayoutContent></LayoutContent>
@@ -22,10 +22,14 @@ const prefixCls = ref('yh-layout-default')
 
 <style lang="scss" scoped>
 $prefix-cls: $namespace + '-layout-default';
+$prefix-cls-main: $namespace + '-layout-default';
 
 .#{$prefix-cls} {
   @apply w-full h-full overflow-hidden;
   min-height: 100%;
   background-color: var(--el-bg-color-page);
+  &-content {
+    @apply flex flex-col;
+  }
 }
 </style>

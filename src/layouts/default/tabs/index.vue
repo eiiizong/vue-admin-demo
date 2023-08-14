@@ -1,11 +1,15 @@
 <template>
-  <div class="layout-tabs">layout-tabs</div>
+  <div :class="prefixCls">tabs</div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const prefixCls = ref('yh-layout-default-tabs')
+</script>
 
 <style lang="scss" scoped>
-.layout-tabs {
-  // background-color: #f00f;
+$prefix-cls: $namespace + '-layout-default-tabs';
+
+.#{$prefix-cls} {
+  //
 }
 </style>
