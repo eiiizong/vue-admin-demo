@@ -6,6 +6,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 import { configEslintPlugin } from './eslint'
 import { configHtmlPlugin } from './html'
+import { configSvgLoaderPlugin } from './svg-loader'
 import { configWindiCSSPluginPlugin } from './windicss'
 
 import type { PluginOption } from 'vite'
@@ -38,6 +39,9 @@ const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
 
   // vite-plugin-html
   vitePlugins.push(configHtmlPlugin(viteEnv, isBuild))
+
+  // vite-svg-loader
+  vitePlugins.push(configSvgLoaderPlugin())
 
   // vite-plugin-windicss
   vitePlugins.push(configWindiCSSPluginPlugin())

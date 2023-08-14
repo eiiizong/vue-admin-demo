@@ -1,6 +1,6 @@
 import type { AppRouteRecordRaw } from '@/router/types'
 
-const menuManagmentRoute: AppRouteRecordRaw = {
+const menuRoute: AppRouteRecordRaw = {
   path: 'menu',
   name: 'SysMenu',
   component: () => import('@/views/sys/menu/index.vue'),
@@ -9,4 +9,4 @@ const menuManagmentRoute: AppRouteRecordRaw = {
   }
 }
 
-export default menuManagmentRoute
+export default menuRoute
