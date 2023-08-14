@@ -2,7 +2,8 @@ import type { AppRouteRecordRaw } from '@/router/types'
 
 import { LAYOUT, PROJECT_PATH, WORKBENCH_PATH } from '@/router/constant'
 
-import { loginRoute, workbenchRoute, exceptionRoute } from './common'
+import { loginRoute } from '@/router/routes/sys/login'
+import { workbenchRoute } from '@/router/routes/sys/workbench'
 
 /**
  * 获取 project/demo/sys 目录下所有路由
@@ -29,7 +30,7 @@ const getRoute = (type: 'demo' | 'project' | 'sys') => {
   }
 
   if (type === 'sys') {
-    modules = import.meta.glob(['./sys/**/*.ts'], {
+    modules = import.meta.glob(['./sys/**/*.ts', '!./sys/**/login.ts', '!./sys/**/workbench.ts'], {
       eager: true
     })
   }
@@ -91,7 +92,7 @@ const layoutRoute: AppRouteRecordRaw = {
   meta: {
     name: '工作台'
   },
-  children: [projectRoute, demoRoute, sysRoute, workbenchRoute, exceptionRoute]
+  children: [projectRoute, demoRoute, sysRoute, workbenchRoute]
 }
 
 const routes = [layoutRoute, loginRoute]
