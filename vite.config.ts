@@ -72,6 +72,13 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
         }
       }
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '$namespace:yh;'
+        }
+      }
+    },
     esbuild: {
       pure: VITE_DROP_CONSOLE ? ['console.log', 'debugger'] : []
     },

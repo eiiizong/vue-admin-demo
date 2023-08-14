@@ -1,11 +1,15 @@
 <template>
-  <div class="layout-header">layout-header</div>
+  <el-header :class="prefixCls"> header </el-header>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const prefixCls = ref('yh-layout-default-header')
+</script>
 
 <style lang="scss" scoped>
-.layout-header {
+$prefix-cls: $namespace + '-layout-default-header';
+
+.#{$prefix-cls} {
   //
 }
 </style>

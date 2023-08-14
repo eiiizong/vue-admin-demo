@@ -1,13 +1,15 @@
 <template>
-  <div class="layout-sider h-full flex flex-col" :style="layoutSiderStyle">
+  <el-aside :style="layoutSiderStyle" :class="prefixCls">
     <LayoutLogo></LayoutLogo>
     <LayoutMenu class="flex-1"></LayoutMenu>
-  </div>
+  </el-aside>
 </template>
 
 <script lang="ts" setup>
 import LayoutLogo from '@/layouts/default/logo/index.vue'
 import LayoutMenu from '@/layouts/default/menu/index.vue'
+
+const prefixCls = ref('yh-layout-default-aside')
 
 const layoutSiderStyle = computed(() => {
   let str = ''
@@ -17,7 +19,9 @@ const layoutSiderStyle = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-.layout-sider {
+$prefix-cls: $namespace + '-layout-default-aside';
+
+.#{$prefix-cls} {
   background-image: linear-gradient(180deg, #0f1b53 0%, #364aa8 100%);
 }
 </style>

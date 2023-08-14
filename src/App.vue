@@ -1,11 +1,16 @@
 <template>
   <el-config-provider v-bind="elConfigProviderAttr">
-    <router-view></router-view>
+    <AppProvider>
+      <router-view></router-view>
+    </AppProvider>
   </el-config-provider>
 </template>
 
 <script lang="ts" setup>
+import { AppProvider } from '@/components/AppProvider'
+
 import { ElConfigProvider } from 'element-plus'
+
 import { useElConfigProviderAttr } from '@/hooks'
 
 const elConfigProviderAttr = useElConfigProviderAttr()
