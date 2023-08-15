@@ -17,7 +17,9 @@ import LayoutHeader from '@/layouts/default/header/index.vue'
 import LayoutAside from '@/layouts/default/aside/index.vue'
 import LayoutTabs from '@/layouts/default/tabs/index.vue'
 
-const prefixCls = ref('yh-layout-default')
+import { useDesign } from '@/hooks/web'
+
+const { prefixCls } = useDesign('layout-default')
 </script>
 
 <style lang="scss" scoped>

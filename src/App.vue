@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { AppProvider } from '@/components/AppProvider'
+import { AppProvider } from '@/components/Application'
 
 import { ElConfigProvider } from 'element-plus'
 

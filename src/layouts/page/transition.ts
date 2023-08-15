@@ -6,6 +6,9 @@ export interface DefaultContext {
   route: RouteLocation
 }
 
+/**
+ * 获取动画名称
+ */
 const getTransitionName = ({
   route,
   openCache,
@@ -29,6 +32,7 @@ const getTransitionName = ({
   if (openCache) {
     name = isInCache && route.meta.loaded ? transitionName : undefined
   }
+
   return name || (route.meta.transitionName as string) || def
 }
 
