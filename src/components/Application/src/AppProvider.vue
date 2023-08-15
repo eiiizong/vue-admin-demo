@@ -34,8 +34,6 @@ const handleRestoreState = () => {
 }
 
 createBreakpointListen(({ screenMap, sizeEnum, width }) => {
-  console.log(screenMap, sizeEnum, width)
-
   const lgWidth = screenMap.get(sizeEnum.LG)
   if (lgWidth) {
     isMobile.value = width.value - 1 < lgWidth
