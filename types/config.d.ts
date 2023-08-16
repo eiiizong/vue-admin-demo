@@ -182,9 +182,13 @@ export interface ProjectConfig {
    * headerSetting
    */
   headerSetting: HeaderSetting
-  // menuSetting
+  /**
+   * 菜单配置
+   */
   menuSetting: MenuSetting
-  // Multi-tab settings
+  /**
+   * tab 配置
+   */
   multiTabsSetting: MultiTabsSetting
   /**
    * 动画配置
